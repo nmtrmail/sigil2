@@ -1,6 +1,6 @@
-From d13aa9b61526d8c5ac50bcb2132f0872df688377 Mon Sep 17 00:00:00 2001
+From 46a3e370022c4c34eae9dc4c118cde546ca0d398 Mon Sep 17 00:00:00 2001
 From: Mike Lui <mike.d.lui@gmail.com>
-Date: Fri, 20 Oct 2017 14:44:32 -0400
+Date: Mon, 13 Nov 2017 13:38:24 -0500
 Subject: [PATCH] patch
 
 ---
@@ -6405,7 +6405,7 @@ index 000000000..413158a0d
 +#endif
 diff --git a/sigrind/sg_main.c b/sigrind/sg_main.c
 new file mode 100644
-index 000000000..6fd37966c
+index 000000000..bdf6208e4
 --- /dev/null
 +++ b/sigrind/sg_main.c
 @@ -0,0 +1,1872 @@
@@ -6743,7 +6743,7 @@ index 000000000..6fd37966c
 +         case Ist_Put:
 +         case Ist_PutI:
 +         case Ist_MBE:
-+
++             break;
 +         case Ist_IMark: 
 +         {
 +            if (SGL_(clo).gen_instr == True)
@@ -9056,5 +9056,5 @@ index 000000000..800250d14
 +  return es;
 +}
 -- 
-2.14.2
+2.15.0
 
